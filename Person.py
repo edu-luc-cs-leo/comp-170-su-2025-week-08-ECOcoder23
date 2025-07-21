@@ -61,8 +61,7 @@ class Person:
         else:
             is_alpha = False 
         return is_alpha   
-    
-    def   
+  
   
 Bertha = Person("Bertha", "Walters")
 Bertha.set_birthday(8, 8)
