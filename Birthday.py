@@ -9,7 +9,7 @@ class Birthday:
     def __init__(self, month, day):
         """Basic constructor. It validates the arguments past to it
         and if they are out of range, it assigns a default value of
-        January 1."""
+        January 1.""" 
         # Protect month value
         if month >= 1 and month <= 12:
             self.__month = month

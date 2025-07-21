@@ -39,3 +39,43 @@ class Person:
     def __str__(self):
         """String representation for the object"""
         return f"[ {self.first_name} {self.last_name}]"
+    
+    def say_birthday(self): 
+        months_of_year = ["January", "February", "March", "April", "May", "June", "July", "August", 
+        "September", "October", "November", "December"]
+        day = self._birthday.get_day()
+        month = self._birthday.get_month()
+        if day == 1 or day == 31:
+            print(f"{day}st of {months_of_year[month - 1]}")
+        elif day == 2:
+            print(f"{day}nd of {months_of_year[month - 1]}")
+        elif day == 3:
+            print(f"{day}rd of {months_of_year[month - 1]}")
+        else:
+            print(f"{day}th of {months_of_year[month - 1]}")
+    
+    def __1t__(self, other):
+        is_alpha = None 
+        if self.first_name < other.first_name:
+           is_alpha = True
+        else:
+            is_alpha = False 
+        return is_alpha   
+    
+    def   
+  
+Bertha = Person("Bertha", "Walters")
+Bertha.set_birthday(8, 8)
+Bertha.say_birthday()
+other = Person("Alfreda", "Fields")
+print(Bertha.__1t__(other))
+
+
+                        
+            
+                     
+                
+
+
+
+
