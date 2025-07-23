@@ -43,10 +43,23 @@ class Birthday:
     # Compute days to birthday
     def days_until(self):
         # obtain today's date
+        current_date = datetime.today()
         # extract month and day
+        current_day = current_date.day
+        current_month = current_date.month
         # subtract from birthday
+        b_day = self.get_day()
+        b_month = self.get_month()
+        days_til_bday = self.day_in_year(b_month, b_day)
+        days_til_date = self.day_in_year(current_month, current_day)
+        if days_til_bday > days_til_date:
+            num_of_days = days_til_bday - days_til_date
+        elif days_til_bday < days_til_date:
+            num_of_days = 365 + (days_til_bday - days_til_date)
+        else:
+            num_of_days = 0
         # return # of days
-        today = datetime.today()
+        return num_of_days
         # COMPLETE THIS FOR YOUR ASSIGNMENT
         
     def day_in_year(self, month, day):
@@ -61,8 +74,18 @@ class Birthday:
         """String representation for the object"""
         return f"[ {self.get_month()}/{self.get_day()} ]"
     
+    def set_month(self, month): 
+        if month >= 1 or month <= 12:
+            self.__month = month
+
 
 demo = Birthday(6,29)
+
+Bday = Birthday(8, 8)
+Bday.set_month(9)
+Bday.set_day(23)
+print(Bday.days_until())
+
 
 print(demo.day_in_year(6,29)) # d_b
 print(demo.day_in_year(4,29)) # d_t
