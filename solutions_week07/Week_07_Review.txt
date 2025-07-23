@@ -1,0 +1,14 @@
+                                                     Review
+    My code in the file "SuperVehicles.py", which abstracts the shared characteristics of the vehicles in "Vehicles.py" 
+into one super-class practically mirrors the solution code in its content. The redundancy of the object classes in 
+"Vehicles.py" allowed for the creation of a super-class with the same attributes and methods as each vehicle sub-class.
+When attempting to use this super-class to redefine the vehicle sub-classes, my code differed noticeably from the solution
+code. My code did not properly use the concept of inheritance in order to define the vehicle sub-classes using the newly 
+defined super-class, but instead simply initiated new objects of the class "Supervehicles". 
+
+    My code in the file "SuperAles.py", which abstracts the shared characteristics of the Ales in "Ales.py" into one 
+super-class, "SuperAles" also closely resembles the solution code. As was the case with the vehicle classes in "Vehicles.py",
+the redundancy of the object classes in "Ales.py" allowed for the creation of a super-class with the same attributes and 
+methods as each Ale sub-class. But, when I attempted to redefine the vehicle sub-classes using the newly defined super-class,
+my approach was erroneous and significantly deviated from the solution code. Instead of using the concept of inheritance in 
+order to define the Ale sub-classes using the newly defined super-class, I initiated new objects of the class "SuperAles".
